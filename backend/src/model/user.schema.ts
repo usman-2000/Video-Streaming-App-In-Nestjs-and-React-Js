@@ -13,6 +13,8 @@ export class User {
     password: string
     @Prop({ default: Date.now() })
     createdDate: Date
+    @Prop({ required: true })
+    OTP: number
 }
 
 export const UserSchema = SchemaFactory.createForClass(User)
